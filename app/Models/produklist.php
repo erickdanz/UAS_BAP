@@ -25,7 +25,7 @@ class produklist extends Model
      *
      * @var array
      */
-    protected $fillable = ['id_produk', 'nama_produk', 'harga', 'image'];
+    protected $fillable = ['id_produk', 'nama_produk', 'harga', 'image', 'deskripsi_produk'];
 
     
 }

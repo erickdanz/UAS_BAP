@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/index',[UserController::class,'indexPage']);
-Route::get('beli',[UserController::class,'beliPage']);
+Route::get('beli/{id}',[UserController::class,'beliPage']);
 Route::get('about',[UserController::class,'aboutPage']);
 Route::get('blog_list',[UserController::class,'blog_listPage']);
 Route::get('contact',[UserController::class,'contactPage']);

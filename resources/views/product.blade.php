@@ -43,7 +43,7 @@
                      <div class="box">
                         <div class="option_container">
                            <div class="options">
-                              <a href="{{ url('beli')}}" class="option2">
+                              <a href="{{ url('beli/'.$produk->id_produk)}}" class="option2">
                               Buy Now
                               </a>
                            </div>

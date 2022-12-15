@@ -25,6 +25,7 @@ class produklistController extends Controller
                 ->orWhere('nama_produk', 'LIKE', "%$keyword%")
                 ->orWhere('harga', 'LIKE', "%$keyword%")
                 ->orWhere('image', 'LIKE', "%$keyword%")
+                ->orWhere('deskripsi_produk', 'LIKE', "%$keyword%")
                 ->latest()->paginate($perPage);
         } else {
             $produklist = produklist::latest()->paginate($perPage);

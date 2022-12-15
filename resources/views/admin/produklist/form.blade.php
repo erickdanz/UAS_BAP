@@ -18,6 +18,11 @@
     <input type="file" name="image" id="image">
     {!! $errors->first('image', '<p class="help-block">:message</p>') !!}
 </div>
+<div class="form-group {{ $errors->has('deskripsi_produk') ? 'has-error' : ''}}">
+    <label for="deskripsi_produk" class="control-label">{{ 'Deskripsi Produk' }}</label>
+    <input class="form-control" name="deskripsi_produk" type="text" id="deskripsi_produk" value="{{ isset($produklist->deskripsi_produk) ? $produklist->deskripsi_produk : ''}}" >
+    {!! $errors->first('deskripsi_produk', '<p class="help-block">:message</p>') !!}
+</div>
 
 
 <div class="form-group">

@@ -327,25 +327,25 @@
                </h2>
             </div>
             <div class="row">
-               @foreach ($data_product as $product)
+               @foreach ($data_product as $produk)
                   <div class="col-sm-6 col-md-4 col-lg-4">
                      <div class="box">
                         <div class="option_container">
                            <div class="options">
-                              <a href="{{ url('beli')}}" class="option2">
+                              <a href="{{ url('beli/'.$produk->id_produk)}}" class="option2">
                               Buy Now
                               </a>
                            </div>
                         </div>
                         <div class="img-box">
-                           <img src="{{ asset($product->image)}}" alt="">
+                           <img src="{{ asset($produk->image)}}" alt="">
                         </div>
                         <div class="detail-box">
                            <h5>
-                              {{$product->nama_produk}}
+                              {{$produk->nama_produk}}
                            </h5>
                            <h6>
-                              Rp {{number_format($product->harga)}}
+                              Rp {{number_format($produk->harga)}}
                            </h6>
                         </div>
                      </div>

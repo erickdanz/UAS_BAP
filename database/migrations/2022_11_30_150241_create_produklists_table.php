@@ -19,6 +19,7 @@ class CreateProduklistsTable extends Migration
             $table->string('nama_produk')->nullable();
             $table->string('harga')->nullable();
             $table->string('image')->nullable();
+            $table->string('deskripsi_produk')->nullable();
             });
     }
 

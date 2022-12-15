@@ -292,8 +292,8 @@ a:focus {
 .slider_section .detail-box a {
     display: inline-block;
     padding: 12px 45px;
-    background-color: #f7444e;
-    border: 1px solid #f7444e;
+    background-color: #AA98A9;
+    border: 1px solid #AA98A9;
     color: #ffffff;
     border-radius: 0;
     -webkit-transition: all 0.3s;
@@ -510,8 +510,8 @@ a:focus {
 .product_section .btn-box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #AA98A9;
+  border: 1px solid #AA98A9;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -520,7 +520,7 @@ a:focus {
 
 .product_section .btn-box a:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: #AA98A9;
 }
 
 .arrival_section .heading_container {
@@ -1120,7 +1120,16 @@ form input[type="submit"]:focus {
     font-weight: 400;
 }
 
-http://kute-themes.com/html/boutique/html/index.html
-https://template.hasthemes.com/noraure/noraure/index.html
-https://preview.hasthemes.com/xoss-preview/xoss/index.html
-
+/* Customization */
+.btn_custom1 {
+  display: inline-block;
+  padding: 12px 45px;
+  background-color: #AA98A9;
+  border: 1px solid #AA98A9;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-weight: 700;
+}

@@ -12,8 +12,9 @@ class UserController extends Controller
         return view('index',compact('data_product'));
     }
 
-    public function beliPage(){
-        return view('beli');
+    public function beliPage($id){
+        $data_product = produklist::where('id_produk',$id)->get();
+        return view('beli',compact('data_product'));
     }
 
     public function aboutPage(){

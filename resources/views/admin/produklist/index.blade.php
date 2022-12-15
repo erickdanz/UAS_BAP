@@ -5,8 +5,8 @@
         <div class="row">
 
 
-            <div class="col-md-9">
-                <div class="card">
+            <div class="row">
+                <div class="">
                     <div class="card-header">Produklist</div>
                     <div class="card-body">
                         <a href="{{ url('/admin/produklist/create') }}" class="btn btn-success btn-sm" title="Add New produklist">
@@ -30,14 +30,14 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>Id Produk</th><th>Nama Produk</th><th>Harga</th><th>Actions</th>
+                                        <th>#</th><th>Id Produk</th><th>Nama Produk</th><th>Harga</th><th>Deskripsi Produk</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($produklist as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->id_produk }}</td><td>{{ $item->nama_produk }}</td><td>{{ $item->harga }}</td>
+                                        <td>{{ $item->id_produk }}</td><td>{{ $item->nama_produk }}</td><td>{{ $item->harga }}</td><td>{{ $item->deskripsi_produk }}</td>
                                         <td>
                                             <a href="{{ url('/admin/produklist/' . $item->id) }}" title="View produklist"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                                             <a href="{{ url('/admin/produklist/' . $item->id . '/edit') }}" title="Edit produklist"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
